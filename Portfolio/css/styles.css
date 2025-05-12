@@ -423,7 +423,7 @@ img:hover {
   right: 20px;
   width: auto; /* Auto width based on content */
   padding: 12px 20px; /* Adjust padding */
-  background-color: #007bff; /* Blue button */
+  background-color: #888bff; /* Blue button */
   color: white;
   border: none; /* No border */
   border-radius: 5px;
@@ -435,7 +435,7 @@ img:hover {
   animation: popUpButtonAnimation 1s ease-out 1s backwards; /* Renamed animation, added delay */
 }
 .ContactPopupButton:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #8856b3; /* Darker blue on hover */
 }
 
 /* Renamed animation */
