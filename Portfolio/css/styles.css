@@ -52,7 +52,7 @@ h2:hover {
 }
 
 .light-text {
-  /* Renamed class */
+  
   color: #f8f9fa; /* Light color for text over dark backgrounds */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add text shadow */
 }
@@ -73,7 +73,7 @@ p:hover {
 }
 
 .centered-text {
-  /* Renamed class */
+  
   text-align: center;
 }
 
@@ -114,7 +114,7 @@ img:hover {
 }
 
 .SiteFooter {
-  /* Renamed class */
+  
   padding: 1.5% 1%; /* Adjusted padding */
   background-color: #000; /* Dark footer background */
   color: #f8f9fa; /* Light text color */
@@ -135,7 +135,7 @@ img:hover {
 
 /***** Navigation Styles *****/
 .HeaderNavigation {
-  /* Renamed class */
+  
   overflow: hidden;
   background-color: #000; /* Darker navbar */
   position: fixed;
@@ -159,7 +159,7 @@ img:hover {
 }
 
 .HeaderNavigation .nav-link {
-  /* Renamed class */
+  
   float: left;
   display: block;
   color: #dee2e6; /* Lighter grey navbar text */
@@ -198,7 +198,7 @@ img:hover {
 }
 
 .HeroTextContainer {
-  /* Renamed class */
+  
   /* Semi-transparent overlay */
   background: linear-gradient(rgba(50, 10, 200, 0.4), rgba(0, 0, 200, 0.7));
   color: white;
@@ -240,7 +240,7 @@ img:hover {
 
 /***** Showcase (Slideshow) Styles *****/
 .GalleryBackground {
-  /* Renamed class */
+  
   background: rgba(
     248,
     249,
@@ -251,7 +251,7 @@ img:hover {
 }
 
 .SlideshowWrapper {
-  /* Renamed class */
+  
   max-width: 55vw; /* Adjust max width */
   position: relative;
   margin: auto;
@@ -261,12 +261,12 @@ img:hover {
 }
 
 .SlideItem {
-  /* Renamed class */
+  
   display: none; /* Hide slides by default */
 }
 
 .GalleryImage {
-  /* Renamed class */
+  
   vertical-align: middle;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
@@ -276,9 +276,9 @@ img:hover {
   box-shadow: none;
 }
 
-.PrevButton, /* Renamed class */
+.PrevButton, 
 .NextButton {
-  /* Renamed class */
+  
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -305,7 +305,7 @@ img:hover {
 }
 
 .caption {
-  /* Renamed class */
+  
   color: #f2f2f2;
   font-size: 1.3vw; /* Adjusted size */
   padding: 10px 12px; /* Adjusted padding */
@@ -326,7 +326,7 @@ img:hover {
 }
 
 .IndicatorDot {
-  /* Renamed class */
+  
   cursor: pointer;
   height: 12px; /* Fixed size */
   width: 12px;
@@ -362,7 +362,7 @@ img:hover {
 
 /***** Content Row (About/GitHub) Styles *****/
 .ContentRow {
-  /* Renamed class */
+  
   display: flex; /* Use flexbox for columns */
   flex-wrap: wrap; /* Allow wrapping on small screens */
   width: 100%;
@@ -371,7 +371,7 @@ img:hover {
 }
 
 .InfoColumn {
-  /* Renamed class */
+  
   flex: 1; /* Allow columns to grow equally */
   min-width: 300px; /* Minimum width before wrapping */
   padding: 2.5%; /* Adjusted padding */
@@ -379,7 +379,7 @@ img:hover {
 }
 
 .TextColumn {
-  /* Renamed class */
+  
   background-color: #ffffff; /* Ensure white background */
   display: flex; /* Use flex to center content */
   flex-direction: column;
@@ -394,7 +394,7 @@ img:hover {
 }
 
 .ImageColumn {
-  /* Renamed class */
+  
   background-color: #e9ecef; /* Light grey background for image column */
   display: flex; /* Use flex to center image */
   align-items: center;
@@ -417,7 +417,7 @@ img:hover {
 
 /***** Contact Form Styles *****/
 .ContactPopupButton {
-  /* Renamed class */
+  
   position: fixed;
   bottom: 20px; /* Fixed positioning */
   right: 20px;
@@ -451,14 +451,14 @@ img:hover {
 }
 
 .ModalForm {
-  /* Renamed class */
+  
   display: none; /* Hidden by default */
   position: fixed;
   bottom: 10px;
   right: 10px;
   border: 1px solid #ccc;
   z-index: 101; /* Above navbar */
-  background-color: #fff;
+  background-color: #f6A;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   max-width: 450px; /* Limit form width */
@@ -478,7 +478,7 @@ img:hover {
 }
 
 .ModalContent {
-  /* Renamed class */
+  
   padding: 20px;
   background-color: white;
   border-radius: 8px; /* Match container */
@@ -537,7 +537,7 @@ img:hover {
 }
 
 .SubmitButton {
-  /* Renamed class */
+  
   background-color: #28a745; /* Green submit */
   color: white;
   margin-bottom: 10px;
@@ -547,7 +547,7 @@ img:hover {
 }
 
 .CloseButton {
-  /* Renamed class */
+  
   background-color: #dc3545; /* Red close */
   color: white;
 }
