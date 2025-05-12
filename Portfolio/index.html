@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatima – Advanced Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/sample_portfolio.css" />
+  </head>
+  <body class="SiteBackground">
+    <nav class="HeaderNavigation">
+      <a class="nav-link active" href="#WelcomeSection">Home</a>
+      <a class="nav-link" href="#GallerySection">Work</a>
+      <a class="nav-link" href="#BioSection">Story</a>
+      <a class="nav-link" href="#CodeSection">Code</a>
+      <a onclick="showContactForm()" ondblclick="hideContactForm()" class="nav-link contact-trigger">Contact</a>
+    </nav>
+
+    <section id="WelcomeSection">
+      <video autoplay muted loop id="BgVideoPlayer">
+        <source src="assets/video/background_loop.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
+
+    <div class="HeroTextContainer">
+      <h1 class="light-text">Hello. My name is Fatima AlBashar.</h1>
+      <strong>
+        <p class="centered-text intro-quote">
+          Welcome to my digital studio.<br />
+          I'm a creative technologist with a love for code, user experiences, and meaningful design.<br /><br />
+          Take a look around — and let's build something incredible together.
+        </p>
+      </strong>
+    </div>
+
+    <section id="GallerySection">
+      <div class="GalleryBackground">
+        <h2>Featured Work</h2>
+        <div class="SlideshowWrapper">
+          <div class="SlideItem fade-effect" style="display: block">
+            <img class="GalleryImage"
+              src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Creative workspace"
+            />
+            <div class="caption">Let’s collaborate on your next big idea.</div>
+          </div>
+          <div class="SlideItem fade-effect" style="display: none">
+            <img class="GalleryImage"
+              src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg"
+              alt="Web languages"
+            />
+            <div class="caption">Fluent in HTML, CSS & JavaScript — the essentials of the modern web.</div>
+          </div>
+          <div class="SlideItem fade-effect" style="display: none">
+            <img class="GalleryImage"
+              src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/python-developer.png"
+              alt="Python development"
+            />
+            <div class="caption">Solving problems with Python, one elegant script at a time.</div>
+          </div>
+          <div class="SlideItem fade-effect" style="display: none">
+            <img class="GalleryImage"
+              src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg"
+              alt="Contact Me"
+            />
+            <div class="caption">
+              <a class="light-text contact-trigger" onclick="showContactForm()">Let’s talk about your project!</a>
+            </div>
+          </div>
+          <a class="PrevButton" onclick="navigateSlides(-1)">&#10094;</a>
+          <a class="NextButton" onclick="navigateSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="IndicatorDot active" onclick="selectSlide(1)"></span>
+          <span class="IndicatorDot" onclick="selectSlide(2)"></span>
+          <span class="IndicatorDot" onclick="selectSlide(3)"></span>
+          <span class="IndicatorDot" onclick="selectSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ContentRow" id="BioSection">
+      <div class="InfoColumn TextColumn">
+        <h1>My Story</h1>
+        <p>
+          I blend creativity and code to build digital experiences that resonate.<br />
+          From UI/UX to backend logic, I’m continuously learning, building, and collaborating.
+          <br /><br />
+          <a onclick="showContactForm()" class="contact-trigger">Let’s connect</a> and explore how I can help.
+        </p>
+      </div>
+      <div class="InfoColumn ImageColumn">
+        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Developer at work" />
+      </div>
+    </section>
+
+    <section class="ContentRow" id="CodeSection">
+      <div class="InfoColumn TextColumn">
+        <h1>Code & Projects</h1>
+        <p>Explore a sample of my open source work and personal builds:</p>
+        <p class="centered-text">
+          <a href="https://github.com/Khaddam1" target="_blank" rel="noopener noreferrer">Visit My GitHub</a>
+        </p>
+      </div>
+      <div class="InfoColumn ImageColumn">
+        <a href="https://github.com/Fatima-Albashar" target="_blank" rel="noopener noreferrer">
+          <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="GitHub Logo" />
+        </a>
+      </div>
+    </section>
+
+    <section id="ContactFormArea">
+      <button onclick="showContactForm()" class="ContactPopupButton">GET IN TOUCH</button>
+      <div class="ModalForm" id="ContactModalContainer" ondblclick="hideContactForm()" style="display: none">
+        <form action="https://formspree.io/f/your_form_id" method="POST" class="ModalContent">
+          <h1>Let's Talk</h1>
+          <label for="contact_name"><b>Name</b></label>
+          <input type="text" placeholder="Your Name" name="name" id="contact_name" required />
+          <label for="contact_phone"><b>Phone (Optional)</b></label>
+          <input type="tel" placeholder="Your Phone Number" name="phone" id="contact_phone" />
+          <label for="contact_email"><b>Email</b></label>
+          <input type="email" placeholder="Your Email Address" name="email" id="contact_email" required />
+          <label for="contact_message"><b>Message</b></label>
+          <textarea placeholder="Your Message" name="message" id="contact_message" required rows="4"></textarea>
+          <button type="submit" class="SubmitButton">SEND</button>
+          <button type="button" class="CloseButton" onclick="hideContactForm()">CLOSE</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="SiteFooter">
+      <p class="centered-text">
+        &copy; 2025 | Made By
+        <a href="https://github.com/Fatima-Albashar" target="_blank" rel="noopener noreferrer">Fatima AlBashar</a> |
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
